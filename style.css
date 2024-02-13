@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    box-shadow: 5px 5px 10px rgb(184, 178, 178);
+}
+.navbar-toggler,
+.navbar-toggler-icon:active {
+    box-shadow: none !important;
+}
+.navbar-nav a:hover {
+    color: rgb(228, 32, 32);
+    
+
+}
+       /*  carousel  */
+
+       
+
+    
+.carousel-item img {
+    height:500px;
+}
+/* 
+.carousel-indicators button {
+    color: brown !important;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+} */
+.offers {
+    padding-top: 8.9rem;
+}
+.offers .offer-box .offer-img::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -100%;
+    z-index: 2;
+    display: block;
+    width: 50%;
+    height: 100%;
+    background:linear-gradient(to right, rgba(255,255,255,0)0% rgba(255,255,255,0.3) 100%);
+    transform:skewX(-25deg);
+}
+.offers .offer-box .offer-img img{
+    transform: scale(1.02);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.offers .offer-box:hover .offer-img::before{
+    animation:effect-shine 1s;
+}
+@keyframes effect-shine{
+    100%{
+        left: 150%;
+    }
+}
+.offers .offer-overlay::before{
+    content: ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+.offer-info-inner {
+    color: white;
+}
+.offers .offer-box .offer-info {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    transition: all 250ms ease-out;
+    justify-content: center;
+    align-items: center;
+}
+.futuer-heading p {
+    color: brown;
+}
+.futuer-heading h4:hover {
+    color: brown;
+}
+.futuer-heading button:hover{
+  background-color:brown;
+  color: white;
+}
+.end-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.end-img {
+    
+    position: relative;
+    width: 80%;
+    height: 300px;
+    background-color: aqua;
+}
+.end-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.end-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.end-heading{
+   position: absolute;
+   top: 40%;
+   left: 30%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 2rem;  
+   color: white;
+}
