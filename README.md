@@ -1,2 +1,3 @@
 # E-commerce Web Page
-# https://app.netlify.com/webpage-e-commerce
+# https://webpage-e-commerce.netlify.app
+
